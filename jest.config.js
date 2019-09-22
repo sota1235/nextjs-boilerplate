@@ -1,12 +1,14 @@
 module.exports = {
   roots: [
-    "<rootDir>/(pages|components)",
+    "<rootDir>/pages",
+    "<rootDir>/components",
   ],
   transform: {
-    "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.tsx?$": "babel-jest",
   },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
   moduleFileExtensions: [
+    "tsx",
     "ts",
     "js",
   ],
