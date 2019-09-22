@@ -1,7 +1,7 @@
 module.exports = {
   roots: [
     "<rootDir>/pages",
-    "<rootDir>/components",
+    "<rootDir>/src",
   ],
   transform: {
     "^.+\\.tsx?$": "babel-jest",

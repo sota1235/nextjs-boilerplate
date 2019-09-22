@@ -3,5 +3,5 @@ module.exports = {
   singleQuote   : true,
   trailingComma : 'all',
   parser        : 'typescript',
-  filepath      : './{components,pages}/**/*.{ts,tsx}',
+  filepath      : './{src,pages}/**/*.{ts,tsx}',
 };
