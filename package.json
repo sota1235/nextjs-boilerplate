@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "fix": "prettier --write './{src,pages}/**.{ts,tsx}'",
+    "fix": "prettier --write './{src,pages}/**.{ts,tsx}' && npm run tslint:fix",
     "tslint": "tslint -c tslint.json '{src,pages}/**/*.{ts,tsx}'",
+    "tslint:fix": "npm run tslint -- --fix",
     "lint": "npm run fix && npm run tslint",
     "test": "jest",
     "test:ci": "jest -c ./jest.config.ci.js"
