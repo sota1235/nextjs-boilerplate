@@ -4,6 +4,8 @@ import { Store } from 'redux';
 import { ActionTypes } from '../src/actions/actionTypes';
 import { withReduxStore } from '../src/hoc/withReduxStore';
 import { AppState } from '../src/reducers';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../src/styles/theme';
 
 type AppStore = Store<AppState, ActionTypes>;
 interface Props extends AppProps {
@@ -16,7 +18,9 @@ class MyApp extends App<any> {
     const { Component, pageProps, store } = this.props;
     return (
       <Provider store={store}>
-        <Component {...pageProps} />
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
       </Provider>
     );
   }
