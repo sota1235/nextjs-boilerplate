@@ -12,6 +12,7 @@ Scaffolding for using Next.js with...
 - prettier
 - Jest
 - styled-components
+- stylelint
 
 ### Requirement
 
