@@ -1,11 +1,12 @@
 import App, { AppProps } from 'next/app';
 import React from 'react';
 import { Provider } from 'react-redux';
-import { AnyAction, Store } from 'redux';
+import { Store } from 'redux';
 import { withReduxStore } from '../src/hoc/withReduxStore';
 import { AppState } from '../src/reducers';
+import {ActionTypes} from "../src/actions/actionTypes";
 
-type AppStore = Store<AppState, AnyAction>;
+type AppStore = Store<AppState, ActionTypes>;
 interface Props extends AppProps {
   store: AppStore;
 }
@@ -22,4 +23,4 @@ class MyApp extends App<any> {
   }
 }
 
-export default withReduxStore<Props, AppState, AnyAction>(MyApp);
+export default withReduxStore<Props, AppState, ActionTypes>(MyApp);
