@@ -1,4 +1,4 @@
-import { Middleware } from "redux";
+import { Middleware } from 'redux';
 
 const middleware: Middleware[] = [];
 
