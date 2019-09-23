@@ -1,4 +1,4 @@
-import {Store} from "redux";
+import { Store } from 'redux';
 
 declare global {
   interface Window<S extends Store> {

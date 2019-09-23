@@ -9,7 +9,7 @@ const links = [
   return link;
 });
 
-const Nav = () => (
+const Nav: React.FC = () => (
   <nav>
     <ul>
       <li>

@@ -1,5 +1,4 @@
 import App, { AppProps } from 'next/app';
-import React from 'react';
 import { Provider } from 'react-redux';
 import { Store } from 'redux';
 import { ActionTypes } from '../src/actions/actionTypes';
