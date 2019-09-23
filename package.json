@@ -37,7 +37,7 @@
     "typescript": "^3.6.3"
   },
   "lint-staged": {
-    "*.ts": [
+    "*.{ts,tsx}": [
       "npm run lint",
       "git add"
     ]
