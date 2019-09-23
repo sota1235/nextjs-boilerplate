@@ -6,8 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "fix": "prettier --write './{src,pages}/**.{ts,tsx}'",
+    "fix": "npm run prettier && npm run tslint:fix",
+    "prettier": "prettier --write './{src,pages}/**.{ts,tsx}'",
     "tslint": "tslint -c tslint.json '{src,pages}/**/*.{ts,tsx}'",
+    "tslint:fix": "npm run tslint -- --fix",
     "lint": "npm run fix && npm run tslint",
     "test": "jest",
     "test:ci": "jest -c ./jest.config.ci.js"
@@ -15,13 +17,16 @@
   "dependencies": {
     "next": "9.0.6",
     "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "react-dom": "16.9.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4"
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.5",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.2",
     "babel-core": "^6.26.3",
     "babel-jest": "^24.9.0",
     "husky": "^3.0.5",
@@ -33,7 +38,7 @@
     "typescript": "^3.6.3"
   },
   "lint-staged": {
-    "*.ts": [
+    "*.{ts,tsx}": [
       "npm run lint",
       "git add"
     ]
