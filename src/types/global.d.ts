@@ -1,5 +1,7 @@
+import {Store} from "redux";
+
 declare global {
-  interface Window {
-    __NEXT_REDUX_STORE__: any; // TODO
+  interface Window<S extends Store> {
+    __NEXT_REDUX_STORE__: S; // TODO
   }
 }
