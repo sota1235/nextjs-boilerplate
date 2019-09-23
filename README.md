@@ -11,6 +11,8 @@ Scaffolding for using Next.js with...
 - ESLint
 - prettier
 - Jest
+- styled-components
+- stylelint
 
 ### Requirement
 
