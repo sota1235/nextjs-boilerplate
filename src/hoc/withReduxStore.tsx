@@ -2,8 +2,8 @@ import { NextComponentType, NextPageContext } from 'next';
 import { AppContext } from "next/app";
 import React from 'react'
 import {Action, AnyAction, Store} from "redux";
-import { getStore } from '../store/configureStore';
 import { createRootReducer} from "../reducers";
+import { getStore } from '../store/configureStore';
 
 const isServer = typeof window === 'undefined';
 export const __NEXT_REDUX_STORE__ = '__NEXT_REDUX_STORE__';
