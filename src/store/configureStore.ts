@@ -6,7 +6,7 @@ import {
   Reducer,
   Store,
 } from 'redux';
-import middleware from './middlewares';
+import middleware from '../middlewares';
 
 export function getStore<S = any, A extends Action = AnyAction>(
   reducer: Reducer,
