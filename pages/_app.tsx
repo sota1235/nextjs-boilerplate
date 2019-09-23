@@ -2,9 +2,9 @@ import App, { AppProps } from 'next/app';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { Store } from 'redux';
+import { ActionTypes } from '../src/actions/actionTypes';
 import { withReduxStore } from '../src/hoc/withReduxStore';
 import { AppState } from '../src/reducers';
-import {ActionTypes} from "../src/actions/actionTypes";
 
 type AppStore = Store<AppState, ActionTypes>;
 interface Props extends AppProps {
