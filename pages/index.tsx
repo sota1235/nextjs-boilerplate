@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head';
 import { Nav } from '../src/components/Nav';
 import styled from 'styled-components';
