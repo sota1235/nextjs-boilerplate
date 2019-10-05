@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots components/ConcertListItem default 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "card": Object {
+        "colors": Object {
+          "primary": "#067df7",
+        },
+      },
+      "colors": Object {
+        "border": Object {
+          "hover": "#067df7",
+          "normal": "#9b9b9b",
+        },
+        "text": "#434343",
+      },
+    }
+  }
+>
+  <ConcertListItem
+    description="This concert will be a great show, I can promise you."
+    thumbnailURL="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
+    title="title"
+  >
+    <ConcertListItem__Wrapper>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "ConcertListItem__Wrapper-cqb6ly-0",
+              "isStatic": true,
+              "lastClassName": "dgDSTi",
+              "rules": Array [
+                "display:flex;align-items:center;",
+              ],
+            },
+            "displayName": "ConcertListItem__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "ConcertListItem__Wrapper-cqb6ly-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="ConcertListItem__Wrapper-cqb6ly-0 dgDSTi"
+        >
+          <ConcertThumbnail
+            thumbnailURL="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
+            title="title"
+          >
+            <ConcertThumbnail__Image
+              alt="title"
+              src="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
+            >
+              <StyledComponent
+                alt="title"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "ConcertThumbnail__Image-sc-9fuuh6-0",
+                      "isStatic": true,
+                      "lastClassName": "dxVdEf",
+                      "rules": Array [
+                        "height:100px;width:100px;border-radius:50%;",
+                      ],
+                    },
+                    "displayName": "ConcertThumbnail__Image",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "ConcertThumbnail__Image-sc-9fuuh6-0",
+                    "target": "img",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                src="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
+              >
+                <img
+                  alt="title"
+                  className="ConcertThumbnail__Image-sc-9fuuh6-0 dxVdEf"
+                  src="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
+                />
+              </StyledComponent>
+            </ConcertThumbnail__Image>
+          </ConcertThumbnail>
+          <ConcertListItem__DescriptionWrapper>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "ConcertListItem__DescriptionWrapper-cqb6ly-1",
+                    "isStatic": true,
+                    "lastClassName": "ehRmVS",
+                    "rules": Array [
+                      "margin:10px;",
+                    ],
+                  },
+                  "displayName": "ConcertListItem__DescriptionWrapper",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "ConcertListItem__DescriptionWrapper-cqb6ly-1",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="ConcertListItem__DescriptionWrapper-cqb6ly-1 ehRmVS"
+              >
+                <ConcertListItem__Description>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "ConcertListItem__Description-cqb6ly-2",
+                          "isStatic": false,
+                          "lastClassName": "cyFoIT",
+                          "rules": Array [
+                            "color:",
+                            [Function],
+                            ";font-size:20px;",
+                          ],
+                        },
+                        "displayName": "ConcertListItem__Description",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "ConcertListItem__Description-cqb6ly-2",
+                        "target": "p",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <p
+                      className="ConcertListItem__Description-cqb6ly-2 cyFoIT"
+                    >
+                      This concert will be a great show, I can promise you.
+                    </p>
+                  </StyledComponent>
+                </ConcertListItem__Description>
+              </div>
+            </StyledComponent>
+          </ConcertListItem__DescriptionWrapper>
+        </div>
+      </StyledComponent>
+    </ConcertListItem__Wrapper>
+  </ConcertListItem>
+</ThemeProvider>
+`;

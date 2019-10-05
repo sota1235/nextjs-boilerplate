@@ -1,3 +1,4 @@
+import React from 'react';
 import App, { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
 import { Store } from 'redux';
