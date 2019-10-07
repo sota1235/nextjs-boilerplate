@@ -1,0 +1,26 @@
+name: Main
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run tests with ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install, lint, test and build
+        run: |
+          npm i
+          npm run test:ci
+          npx codecov@3.0.2
+          npm run lint
+          npm run build
