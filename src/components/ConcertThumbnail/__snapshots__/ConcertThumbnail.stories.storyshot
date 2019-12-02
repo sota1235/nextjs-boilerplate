@@ -35,7 +35,7 @@ exports[`Storyshots components/ConcertThumbnail default 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "ConcertThumbnail__Image-sc-9fuuh6-0",
-              "isStatic": true,
+              "isStatic": false,
               "lastClassName": "dxVdEf",
               "rules": Array [
                 "height:100px;width:100px;border-radius:50%;",
@@ -100,7 +100,7 @@ exports[`Storyshots components/ConcertThumbnail invalid image URL 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "ConcertThumbnail__Image-sc-9fuuh6-0",
-              "isStatic": true,
+              "isStatic": false,
               "lastClassName": "dxVdEf",
               "rules": Array [
                 "height:100px;width:100px;border-radius:50%;",
