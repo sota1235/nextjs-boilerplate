@@ -6,13 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "fix": "npm run prettier:fix && npm run eslint:fix",
     "stylelint": "stylelint './{src,pages,.storybook}/**/*.{ts,tsx}'",
     "prettier": "prettier './{src,pages,.storybook}/**.{ts,tsx}'",
     "prettier:fix": "npm run prettier -- --write",
     "eslint": "eslint '{src,pages,.storybook}/**/*.{ts,tsx}'",
     "eslint:fix": "npm run eslint -- --fix",
     "lint": "npm run prettier && npm run eslint",
+    "fix": "npm run prettier && npm run eslint:fix && npm run stylelint",
     "test": "jest",
     "test:ci": "jest -c ./jest.config.ci.js",
     "storybook": "start-storybook -p 6006",
@@ -27,11 +27,11 @@
     "styled-components": "4.4.1"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "5.2.7",
-    "@storybook/addon-links": "5.2.7",
-    "@storybook/addon-storyshots": "5.2.7",
-    "@storybook/addons": "5.2.7",
-    "@storybook/react": "5.2.7",
+    "@storybook/addon-actions": "5.2.8",
+    "@storybook/addon-links": "5.2.8",
+    "@storybook/addon-storyshots": "5.2.8",
+    "@storybook/addons": "5.2.8",
+    "@storybook/react": "5.2.8",
     "@types/enzyme": "3.10.3",
     "@types/enzyme-adapter-react-16": "1.0.5",
     "@types/jest": "24.0.23",
@@ -63,7 +63,7 @@
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.9.0",
-    "typescript": "3.6.3"
+    "typescript": "3.7.2"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
