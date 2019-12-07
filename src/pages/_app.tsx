@@ -2,11 +2,11 @@ import React from 'react';
 import App, { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
 import { Store } from 'redux';
-import { ActionTypes } from '../src/actions/actionTypes';
-import { withReduxStore } from '../src/hoc/withReduxStore';
-import { AppState } from '../src/reducers';
+import { ActionTypes } from '../actions/actionTypes';
+import { withReduxStore } from '../hoc/withReduxStore';
+import { AppState } from '../reducers';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '../src/styles/theme';
+import { theme } from '../styles/theme';
 
 type AppStore = Store<AppState, ActionTypes>;
 interface Props extends AppProps {
