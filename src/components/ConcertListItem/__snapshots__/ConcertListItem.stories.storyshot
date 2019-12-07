@@ -32,7 +32,7 @@ exports[`Storyshots components/ConcertListItem default 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "ConcertListItem__Wrapper-cqb6ly-0",
-              "isStatic": true,
+              "isStatic": false,
               "lastClassName": "dgDSTi",
               "rules": Array [
                 "display:flex;align-items:center;",
@@ -69,7 +69,7 @@ exports[`Storyshots components/ConcertListItem default 1`] = `
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
                       "componentId": "ConcertThumbnail__Image-sc-9fuuh6-0",
-                      "isStatic": true,
+                      "isStatic": false,
                       "lastClassName": "dxVdEf",
                       "rules": Array [
                         "height:100px;width:100px;border-radius:50%;",
@@ -104,7 +104,7 @@ exports[`Storyshots components/ConcertListItem default 1`] = `
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
                     "componentId": "ConcertListItem__DescriptionWrapper-cqb6ly-1",
-                    "isStatic": true,
+                    "isStatic": false,
                     "lastClassName": "ehRmVS",
                     "rules": Array [
                       "margin:10px;",
