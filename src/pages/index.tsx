@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { Nav } from '../src/components/Nav';
+import { Nav } from '../components/Nav';
 import styled from 'styled-components';
 import Link from 'next/link';
 

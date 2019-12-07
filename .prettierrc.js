@@ -3,5 +3,5 @@ module.exports = {
   singleQuote   : true,
   trailingComma : 'all',
   parser        : 'typescript',
-  filepath      : './{src,pages,.storybook}/**/*.{ts,tsx}',
+  filepath      : './{src,.storybook}/**/*.{ts,tsx}',
 };
