@@ -41,7 +41,7 @@
     "@types/react-redux": "7.1.5",
     "@types/storybook__addon-storyshots": "5.1.2",
     "@types/storybook__react": "4.0.2",
-    "@types/styled-components": "4.4.1",
+    "@types/styled-components": "4.4.2",
     "@typescript-eslint/eslint-plugin": "2.14.0",
     "@typescript-eslint/parser": "2.14.0",
     "babel-core": "6.26.3",
