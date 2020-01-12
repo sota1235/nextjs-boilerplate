@@ -1,5 +1,20 @@
 {
   "extends": [
-    "config:base"
-  ]
+    ":separateMajorReleases",
+    ":ignoreUnstable",
+    ":prNotPending",
+    ":updateNotScheduled",
+    ":prHourlyLimitNone",
+    ":prConcurrentLimitNone",
+    ":automergeLinters",
+    ":automergeTesters",
+    ":automergeTypes",
+    ":automergePatch",
+    ":automergePr",
+    "group:monorepos",
+    "group:recommended",
+    "schedule:weekends"
+  ],
+  "prNotPendingHours": 1,
+  "timezone": "Asia/Tokyo"
 }
