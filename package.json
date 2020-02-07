@@ -27,11 +27,11 @@
     "styled-components": "4.4.1"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "5.3.10",
-    "@storybook/addon-links": "5.3.10",
-    "@storybook/addon-storyshots": "5.3.10",
-    "@storybook/addons": "5.3.10",
-    "@storybook/react": "5.3.10",
+    "@storybook/addon-actions": "5.3.12",
+    "@storybook/addon-links": "5.3.12",
+    "@storybook/addon-storyshots": "5.3.12",
+    "@storybook/addons": "5.3.12",
+    "@storybook/react": "5.3.12",
     "@types/enzyme": "3.10.4",
     "@types/enzyme-adapter-react-16": "1.0.5",
     "@types/jest": "25.1.2",
