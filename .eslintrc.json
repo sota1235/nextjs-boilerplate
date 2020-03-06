@@ -18,6 +18,11 @@
     "project": "./tsconfig.json",
     "warnOnUnsupportedTypeScriptVersion": true
   },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "rules": {
     "react/jsx-uses-vars": "warn",
     "@typescript-eslint/no-explicit-any": "off",
