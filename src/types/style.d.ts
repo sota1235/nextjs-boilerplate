@@ -14,5 +14,10 @@ declare module 'styled-components' {
         primary: string;
       };
     };
+    breakPoints: {
+      small: string;
+      middle: string;
+      large: string;
+    };
   }
 }
