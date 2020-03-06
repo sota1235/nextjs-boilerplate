@@ -1,3 +1,4 @@
 import { AnyAction } from 'redux';
+import { RouterActions } from './routerUpdate';
 
-export type ActionTypes = AnyAction;
+export type ActionTypes = RouterActions | AnyAction;
