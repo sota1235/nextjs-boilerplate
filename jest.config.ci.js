@@ -9,5 +9,6 @@ module.exports = Object.assign({}, defaultConfig, {
     '!**/*.d.ts',
     '!jest.*',
     '!**/*.stories.tsx',
+    '!src/nextComponents/**'
   ],
 });

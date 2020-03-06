@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useRouter } from 'next/router';
-import Head from 'next/head';
+import { Head } from '../../../nextComponents/Head';
 
 const ConcertDetail: React.FC = () => {
   const router = useRouter();
@@ -8,9 +8,8 @@ const ConcertDetail: React.FC = () => {
 
   return (
     <React.Fragment>
-      <Head>
-        <title>Concert Page : {concertId}</title>
-      </Head>
+      <Head noindex={false} title={`Concert Page : ${concertId}`} />
+
       <div>Concert Page</div>
       <div>concert id = {concertId}</div>
     </React.Fragment>
