@@ -1,8 +1,8 @@
 import React from 'react';
-import Head from 'next/head';
 import { Nav } from '../components/Nav';
 import styled from 'styled-components';
 import Link from 'next/link';
+import { Head } from '../nextComponents/Head';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -11,9 +11,7 @@ const Wrapper = styled.div`
 
 const Home = () => (
   <div>
-    <Head>
-      <title>Home</title>
-    </Head>
+    <Head noindex={false} title="Top page" />
 
     <Nav />
 
