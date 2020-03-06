@@ -3,7 +3,9 @@ import { AppState } from '../reducers';
 import { ActionTypes } from '../actions/actionTypes';
 import { routerPageChangeAction, RouterUpdate } from '../actions/routerUpdate';
 
-const checkPageChange: Middleware = <S extends AppState>({
+const checkPageChange: Middleware<{}, AppState, Dispatch<ActionTypes>> = <
+  S extends AppState
+>({
   getState,
   dispatch,
 }: MiddlewareAPI<Dispatch, S>) => (next: Dispatch<ActionTypes>) => (
