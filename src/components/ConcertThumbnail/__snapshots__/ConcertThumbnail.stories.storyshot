@@ -1,75 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots components/ConcertThumbnail default 1`] = `
-<ThemeProvider
-  theme={
-    Object {
-      "card": Object {
+<AppStylesProvider>
+  <ThemeProvider
+    theme={
+      Object {
+        "breakPoints": Object {
+          "large": "1280px",
+          "middle": "960px",
+          "small": "600px",
+        },
+        "card": Object {
+          "colors": Object {
+            "primary": "#067df7",
+          },
+        },
         "colors": Object {
-          "primary": "#067df7",
+          "border": Object {
+            "hover": "#067df7",
+            "normal": "#9b9b9b",
+          },
+          "text": "#434343",
         },
-      },
-      "colors": Object {
-        "border": Object {
-          "hover": "#067df7",
-          "normal": "#9b9b9b",
-        },
-        "text": "#434343",
-      },
+      }
     }
-  }
->
-  <ConcertThumbnail
-    thumbnailURL="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
-    title="sample"
   >
-    <ConcertThumbnail__Image
-      alt="sample"
-      src="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
+    <Memo(GlobalStyleComponent) />
+    <ConcertThumbnail
+      thumbnailURL="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
+      title="sample"
     >
-      <img
+      <ConcertThumbnail__Image
         alt="sample"
-        className="ConcertThumbnail__Image-sc-9fuuh6-0 ckrnVv"
         src="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
-      />
-    </ConcertThumbnail__Image>
-  </ConcertThumbnail>
-</ThemeProvider>
+      >
+        <img
+          alt="sample"
+          className="ConcertThumbnail__Image-sc-9fuuh6-0 ckrnVv"
+          src="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
+        />
+      </ConcertThumbnail__Image>
+    </ConcertThumbnail>
+  </ThemeProvider>
+</AppStylesProvider>
 `;
 
 exports[`Storyshots components/ConcertThumbnail invalid image URL 1`] = `
-<ThemeProvider
-  theme={
-    Object {
-      "card": Object {
+<AppStylesProvider>
+  <ThemeProvider
+    theme={
+      Object {
+        "breakPoints": Object {
+          "large": "1280px",
+          "middle": "960px",
+          "small": "600px",
+        },
+        "card": Object {
+          "colors": Object {
+            "primary": "#067df7",
+          },
+        },
         "colors": Object {
-          "primary": "#067df7",
+          "border": Object {
+            "hover": "#067df7",
+            "normal": "#9b9b9b",
+          },
+          "text": "#434343",
         },
-      },
-      "colors": Object {
-        "border": Object {
-          "hover": "#067df7",
-          "normal": "#9b9b9b",
-        },
-        "text": "#434343",
-      },
+      }
     }
-  }
->
-  <ConcertThumbnail
-    thumbnailURL="broken_url"
-    title="invalid url"
   >
-    <ConcertThumbnail__Image
-      alt="invalid url"
-      src="broken_url"
+    <Memo(GlobalStyleComponent) />
+    <ConcertThumbnail
+      thumbnailURL="broken_url"
+      title="invalid url"
     >
-      <img
+      <ConcertThumbnail__Image
         alt="invalid url"
-        className="ConcertThumbnail__Image-sc-9fuuh6-0 ckrnVv"
         src="broken_url"
-      />
-    </ConcertThumbnail__Image>
-  </ConcertThumbnail>
-</ThemeProvider>
+      >
+        <img
+          alt="invalid url"
+          className="ConcertThumbnail__Image-sc-9fuuh6-0 ckrnVv"
+          src="broken_url"
+        />
+      </ConcertThumbnail__Image>
+    </ConcertThumbnail>
+  </ThemeProvider>
+</AppStylesProvider>
 `;

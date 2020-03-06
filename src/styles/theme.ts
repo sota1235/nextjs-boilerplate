@@ -1,5 +1,6 @@
 // Theme for styled-components
 import { DefaultTheme } from 'styled-components';
+import { small, middle, large } from './breakpoints';
 
 export const theme: DefaultTheme = {
   colors: {
@@ -13,5 +14,10 @@ export const theme: DefaultTheme = {
     colors: {
       primary: '#067df7',
     },
+  },
+  breakPoints: {
+    small,
+    middle,
+    large,
   },
 };
