@@ -27,39 +27,11 @@ exports[`Storyshots components/ConcertThumbnail default 1`] = `
       alt="sample"
       src="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
     >
-      <StyledComponent
+      <img
         alt="sample"
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "ConcertThumbnail__Image-sc-9fuuh6-0",
-              "isStatic": false,
-              "lastClassName": "dxVdEf",
-              "rules": Array [
-                "height:100px;width:100px;border-radius:50%;",
-              ],
-            },
-            "displayName": "ConcertThumbnail__Image",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "ConcertThumbnail__Image-sc-9fuuh6-0",
-            "target": "img",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+        className="ConcertThumbnail__Image-sc-9fuuh6-0 ckrnVv"
         src="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
-      >
-        <img
-          alt="sample"
-          className="ConcertThumbnail__Image-sc-9fuuh6-0 dxVdEf"
-          src="https://i.gyazo.com/45f12d6808968f95e27d959cc5ab34e4.png"
-        />
-      </StyledComponent>
+      />
     </ConcertThumbnail__Image>
   </ConcertThumbnail>
 </ThemeProvider>
@@ -92,39 +64,11 @@ exports[`Storyshots components/ConcertThumbnail invalid image URL 1`] = `
       alt="invalid url"
       src="broken_url"
     >
-      <StyledComponent
+      <img
         alt="invalid url"
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "ConcertThumbnail__Image-sc-9fuuh6-0",
-              "isStatic": false,
-              "lastClassName": "dxVdEf",
-              "rules": Array [
-                "height:100px;width:100px;border-radius:50%;",
-              ],
-            },
-            "displayName": "ConcertThumbnail__Image",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "ConcertThumbnail__Image-sc-9fuuh6-0",
-            "target": "img",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+        className="ConcertThumbnail__Image-sc-9fuuh6-0 ckrnVv"
         src="broken_url"
-      >
-        <img
-          alt="invalid url"
-          className="ConcertThumbnail__Image-sc-9fuuh6-0 dxVdEf"
-          src="broken_url"
-        />
-      </StyledComponent>
+      />
     </ConcertThumbnail__Image>
   </ConcertThumbnail>
 </ThemeProvider>
