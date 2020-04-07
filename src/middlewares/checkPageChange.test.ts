@@ -4,7 +4,7 @@ import { RouterPageChange } from '../actions/routerUpdate';
 describe('test for checkPageChange', () => {
   it('should skip expect RouterUpdateAction', () => {
     const dispatch = jest.fn();
-    const next = jest.fn(action => action);
+    const next = jest.fn((action) => action);
     const action = {
       type: 'SOME_ACTION',
     };
@@ -22,7 +22,7 @@ describe('test for checkPageChange', () => {
 
   it('should skip if page does not change', () => {
     const dispatch = jest.fn();
-    const next = jest.fn(action => action);
+    const next = jest.fn((action) => action);
     const currentURL = '/currentURL';
     const currentState = {
       router: {
@@ -49,7 +49,7 @@ describe('test for checkPageChange', () => {
 
   it('should dispatch path change action if page changes', () => {
     const dispatch = jest.fn();
-    const next = jest.fn(action => action);
+    const next = jest.fn((action) => action);
     const newURL = '/newURL';
     const currentState = {
       router: {
