@@ -8,7 +8,10 @@ const initialState: Concerts = {
   concerts: [],
 };
 
-const concerts = (state: Concerts = initialState, action: ActionTypes) => {
+const concerts = (
+  state: Concerts = initialState,
+  action: ActionTypes,
+): Concerts => {
   switch (action.type) {
     default:
       return state;
