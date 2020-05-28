@@ -14,8 +14,8 @@ interface Props extends AppProps {
   store: AppStore;
 }
 
-class MyApp extends App<any> {
-  constructor(props: any) {
+class MyApp extends App<Props> {
+  constructor(props: Props) {
     super(props);
 
     const router = props.router; // ServerRouter
@@ -31,7 +31,6 @@ class MyApp extends App<any> {
     });
   }
 
-  // TODO better typing
   public render() {
     const { Component, pageProps, store } = this.props;
     return (
@@ -44,4 +43,4 @@ class MyApp extends App<any> {
   }
 }
 
-export default withReduxStore<Props, AppState, ActionTypes>(MyApp);
+export default withReduxStore<Props>(MyApp);
