@@ -18,7 +18,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "next": "9.3.2",
+    "next": "^9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-redux": "7.2.0",
@@ -66,8 +66,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "npm run fix",
-      "git add"
+      "npm run fix"
     ]
   }
 }
