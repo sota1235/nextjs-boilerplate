@@ -1,38 +1,42 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
     "plugin:react/recommended",
-    "prettier/@typescript-eslint"
+    "plugin:prettier/recommended"
   ],
-  "plugins": [
-    "@typescript-eslint",
-    "react"
-  ],
+  "plugins": ["react"],
   "env": { "node": true, "es6": true },
   "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "sourceType": "module",
-    "project": "./tsconfig.json",
-    "warnOnUnsupportedTypeScriptVersion": true
-  },
   "settings": {
     "react": {
       "version": "detect"
     }
   },
-  "rules": {
-    "react/jsx-uses-vars": "warn",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/explicit-function-return-type": "off"
-  },
   "overrides": [
+    {
+      "files": ["**/*.{tsx,ts}"],
+      "extends": [
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "prettier/@typescript-eslint"
+      ],
+      "plugins": ["react", "@typescript-eslint"],
+      "parserOptions": {
+        "sourceType": "module",
+        "project": "./tsconfig.json",
+        "warnOnUnsupportedTypeScriptVersion": true
+      },
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/explicit-function-return-type": "off"
+      }
+    },
     {
       "files": ["**/*.tsx"],
       "rules": {
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "react/jsx-uses-vars": "warn"
       }
     },
     {
