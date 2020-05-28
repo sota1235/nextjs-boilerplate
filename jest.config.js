@@ -1,6 +1,5 @@
 module.exports = {
   roots: [
-    "<rootDir>/pages",
     "<rootDir>/src",
   ],
   transform: {
