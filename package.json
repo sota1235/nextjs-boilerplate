@@ -66,8 +66,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "npm run fix",
-      "git add"
+      "npm run fix"
     ]
   }
 }
