@@ -35,7 +35,7 @@
     "@types/enzyme-adapter-react-16": "1.0.6",
     "@types/jest": "26.0.9",
     "@types/node": "14.0.27",
-    "@types/react": "16.9.45",
+    "@types/react": "16.9.46",
     "@types/react-dom": "16.9.8",
     "@types/react-redux": "7.1.9",
     "@types/storybook__addon-storyshots": "5.1.2",
