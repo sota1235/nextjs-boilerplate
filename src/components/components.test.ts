@@ -1,4 +1,3 @@
-// @ts-ignore Stories2SnapsConverter is not found
 import initStoryshots, {
   Stories2SnapsConverter,
 } from '@storybook/addon-storyshots';
@@ -16,7 +15,6 @@ initStoryshots({
     const tree = mount(storyElement);
 
     if (snapshotFilename) {
-      // @ts-ignore
       expect(toJson(tree.update())).toMatchSpecificSnapshot(snapshotFilename);
     }
   },
