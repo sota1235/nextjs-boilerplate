@@ -6,6 +6,36 @@ const config: StorybookConfig = {
   typescript: {
     check: false,
   },
+  webpackFinal: async (config) => {
+    const { resolve } = config;
+    const alias = resolve?.alias || {};
+    alias['core-js/modules'] = '@storybook/core/node_modules/core-js/modules';
+    alias['core-js/features'] = '@storybook/core/node_modules/core-js/features';
+
+    if (resolve) {
+      resolve.alias = alias;
+      config.resolve = resolve;
+    } else {
+      config.resolve = {
+        alias,
+      };
+    }
+
+    return config;
+  },
+  // @ts-ignore
+  babel: async (options) => ({
+    ...options,
+    presets: [
+      [
+        '@babel/preset-env',
+        {
+          useBuiltIns: 'usage',
+          corejs: 3,
+        },
+      ],
+    ],
+  }),
 };
 
 export default config;
