@@ -5,7 +5,7 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 initStoryshots({
-  configPath: './.storybook/config.tsx',
+  configPath: '.storybook',
   renderer: mount,
   test: ({ story, context }) => {
     const converter = new Stories2SnapsConverter();
