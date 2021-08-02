@@ -1,4 +1,4 @@
-import { StorybookConfig } from '@storybook/core/types/index';
+import { StorybookConfig } from '@storybook/react/types/index';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.tsx'],
