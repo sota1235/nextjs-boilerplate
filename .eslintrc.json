@@ -1,50 +1,5 @@
 {
   "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended"
-  ],
-  "plugins": ["react"],
-  "env": { "node": true, "es6": true },
-  "parser": "@typescript-eslint/parser",
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
-  "overrides": [
-    {
-      "files": ["**/*.{tsx,ts}"],
-      "extends": [
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended",
-        "prettier"
-      ],
-      "plugins": ["react", "@typescript-eslint"],
-      "parserOptions": {
-        "sourceType": "module",
-        "project": "./tsconfig.json",
-        "warnOnUnsupportedTypeScriptVersion": true
-      },
-      "rules": {
-        "@typescript-eslint/no-explicit-any": "off",
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/explicit-module-boundary-types": "off"
-      }
-    },
-    {
-      "files": ["**/*.tsx"],
-      "rules": {
-        "react/prop-types": "off",
-        "react/jsx-uses-vars": "warn"
-      }
-    },
-    {
-      "files": ["**/*.test.{tsx,ts}"],
-      "rules": {
-        "@typescript-eslint/ban-ts-ignore": "off"
-      }
-    }
+    "@sota1235/eslint-config/react"
   ]
 }
