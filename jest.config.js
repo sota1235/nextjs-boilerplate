@@ -7,6 +7,7 @@ module.exports = {
     "^.+\\.tsx?$": "babel-jest",
   },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+  testEnvironment: 'jsdom',
   setupFiles: ['<rootDir>/.jest/register-context.js'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   moduleFileExtensions: [
