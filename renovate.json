@@ -1,20 +1,6 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    ":separateMajorReleases",
-    ":ignoreUnstable",
-    ":prNotPending",
-    ":updateNotScheduled",
-    ":prHourlyLimitNone",
-    ":prConcurrentLimitNone",
-    ":automergeLinters",
-    ":automergeTesters",
-    ":automergeTypes",
-    ":automergePatch",
-    ":automergePr",
-    "group:monorepos",
-    "group:recommended",
-    "schedule:weekends"
-  ],
-  "prNotPendingHours": 1,
-  "timezone": "Asia/Tokyo"
+    "github>sota1235/renovate-config"
+  ]
 }
