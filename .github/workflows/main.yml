@@ -15,19 +15,28 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - name: Run tests with ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+
       - name: npm install
-        run: npm i
+        run: npm ci
+
       - name: lint
         run: npm run lint
+
       - name: test
         run: |
           npm run test:ci
           npx codecov@3.0.2
+
       - name: build storybook
         run: npm run build-storybook
+
+      - name: validate renovate config
+        run: npx --package renovate -c 'renovate-config-validator'
+
       - name: build source
         run: npm run build
