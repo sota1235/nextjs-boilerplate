@@ -10,8 +10,8 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 12.x
           - 14.x
+          - 16.x
 
     steps:
       - uses: actions/checkout@v2
@@ -29,5 +29,5 @@ jobs:
           npx codecov@3.0.2
       - name: build storybook
         run: npm run build-storybook
-      - name: build src
+      - name: build source
         run: npm run build
