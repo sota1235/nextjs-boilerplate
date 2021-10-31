@@ -1,4 +1,5 @@
 {
+  "customSyntax": "@stylelint/postcss-css-in-js",
   "processors": [
     "stylelint-processor-styled-components"
   ],
