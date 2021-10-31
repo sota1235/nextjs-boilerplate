@@ -28,7 +28,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "@sota1235/eslint-config": "^2.0.0",
+    "@sota1235/eslint-config": "^3.0.0",
     "@storybook/addon-actions": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
     "@storybook/addons": "^6.3.6",
