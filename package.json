@@ -34,7 +34,7 @@
     "@storybook/addons": "^6.3.6",
     "@storybook/cli": "^6.3.6",
     "@storybook/react": "^6.3.6",
-    "@stylelint/postcss-css-in-js": "^0.37.2",
+    "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/enzyme": "3.10.12",
     "@types/enzyme-adapter-react-16": "1.0.6",
     "@types/jest": "^27.0.0",
