@@ -1,4 +1,4 @@
-import { combineReducers, Reducer } from 'redux';
+import { combineReducers, Reducer } from '@reduxjs/toolkit';
 import concerts from './concerts';
 import { router } from './router';
 

@@ -1,4 +1,4 @@
-import { Store } from 'redux';
+import { Store } from '@reduxjs/toolkit';
 
 declare global {
   interface Window<S extends Store> {

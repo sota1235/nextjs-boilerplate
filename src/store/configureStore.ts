@@ -6,7 +6,7 @@ import {
   PreloadedState,
   Reducer,
   Store,
-} from 'redux';
+} from '@reduxjs/toolkit';
 import middleware from '../middlewares';
 
 export function getStore<S = any, A extends Action = AnyAction>(

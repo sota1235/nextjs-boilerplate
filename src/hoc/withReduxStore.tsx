@@ -1,6 +1,6 @@
 import NextApp, { AppContext, AppProps } from 'next/app';
-import React from 'react';
-import { PreloadedState, Store } from 'redux';
+import { Component } from 'react';
+import { PreloadedState, Store } from '@reduxjs/toolkit';
 import { AppState, createRootReducer } from '../reducers';
 import { getStore } from '../store/configureStore';
 import { ActionTypes } from '../actions/actionTypes';
@@ -31,7 +31,7 @@ function getOrCreateStore(
 export function withReduxStore<NextAppProps>(App: typeof NextApp) {
   type Props = NextAppProps &
     AppProps & { initialReduxState: PreloadedState<AppState> };
-  return class AppWithRedux extends React.Component<Props> {
+  return class AppWithRedux extends Component<Props> {
     public static async getInitialProps(appContext: AppContext) {
       const store = getOrCreateStore();
 

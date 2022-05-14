@@ -1,5 +1,5 @@
 import { AppState } from '../reducers';
-import { Store } from 'redux';
+import { Store } from '@reduxjs/toolkit';
 
 declare module 'next' {
   interface NextPageContext {
