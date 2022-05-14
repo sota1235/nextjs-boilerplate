@@ -15,12 +15,12 @@ function getOrCreateStore(
 ): Store<AppState, ActionTypes> {
   // Always make a new store if server, otherwise state is shared between requests
   if (isServer) {
-    return getStore<AppState, ActionTypes>(rootReducer, initialState);
+    return getStore(rootReducer, initialState);
   }
 
   // Create store if unavailable on the client and set it on the window object
   if (!Object.prototype.hasOwnProperty.call(window, __NEXT_REDUX_STORE__)) {
-    window[__NEXT_REDUX_STORE__] = getStore<AppState, ActionTypes>(
+    window[__NEXT_REDUX_STORE__] = getStore(
       rootReducer,
       initialState,
     );
