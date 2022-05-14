@@ -1,21 +1,22 @@
 import {
-  Action,
-  AnyAction,
-  applyMiddleware,
-  createStore,
+  configureStore,
   PreloadedState,
   Reducer,
   Store,
-} from 'redux';
+} from '@reduxjs/toolkit';
 import middleware from '../middlewares';
+import { AppState } from '../reducers';
+import { ActionTypes } from '../actions/actionTypes';
 
-export function getStore<S = any, A extends Action = AnyAction>(
+export function getStore(
   reducer: Reducer,
-  initialState?: PreloadedState<S>,
-): Store<S, A> {
-  return createStore<S, A, unknown, unknown>(
+  initialState?: PreloadedState<AppState>,
+): Store<AppState, ActionTypes> {
+  return configureStore<AppState, ActionTypes, typeof middleware>({
     reducer,
-    initialState,
-    applyMiddleware(...middleware),
-  );
+    ...(initialState === undefined ? {} : {
+      preloadedState: initialState,
+    }),
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(middleware),
+  });
 }

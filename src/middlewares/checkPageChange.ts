@@ -1,4 +1,4 @@
-import { Dispatch, Middleware, MiddlewareAPI } from 'redux';
+import { Dispatch, Middleware, MiddlewareAPI } from '@reduxjs/toolkit';
 import { AppState } from '../reducers';
 import { ActionTypes } from '../actions/actionTypes';
 import { routerPageChangeAction, RouterUpdate } from '../actions/routerUpdate';

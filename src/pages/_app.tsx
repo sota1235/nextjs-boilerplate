@@ -1,7 +1,7 @@
 import React from 'react';
 import App, { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
-import { Store } from 'redux';
+import { Store } from '@reduxjs/toolkit';
 import { ActionTypes } from '../actions/actionTypes';
 import { withReduxStore } from '../hoc/withReduxStore';
 import { AppState } from '../reducers';
