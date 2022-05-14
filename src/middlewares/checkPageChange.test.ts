@@ -1,5 +1,15 @@
 import { checkPageChange } from './checkPageChange';
 import { RouterPageChange } from '../actions/routerUpdate';
+import { AppState } from '../reducers';
+
+const emptyState: AppState = {
+  concerts: {
+    concerts: [],
+  },
+  router: {
+    url: '',
+  },
+}
 
 describe('test for checkPageChange', () => {
   it('should skip expect RouterUpdateAction', () => {
@@ -10,7 +20,7 @@ describe('test for checkPageChange', () => {
     };
 
     const dispatcher = checkPageChange({
-      getState: () => ({}),
+      getState: () => (emptyState),
       dispatch,
     })(next);
 
@@ -25,6 +35,7 @@ describe('test for checkPageChange', () => {
     const next = jest.fn((action) => action);
     const currentURL = '/currentURL';
     const currentState = {
+      ...emptyState,
       router: {
         url: currentURL,
       },
@@ -52,6 +63,7 @@ describe('test for checkPageChange', () => {
     const next = jest.fn((action) => action);
     const newURL = '/newURL';
     const currentState = {
+      ...emptyState,
       router: {
         url: 'currentURL',
       },
