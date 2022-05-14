@@ -1,4 +1,3 @@
-import React from 'react';
 import { ConcertThumbnail } from './ConcertThumbnail';
 import { Meta } from '@storybook/react';
 
