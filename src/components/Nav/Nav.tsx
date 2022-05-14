@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import { FC } from 'react';
 
 const links = [
   { href: 'https://zeit.co/now', label: 'ZEIT' },
@@ -9,7 +9,7 @@ const links = [
   return link;
 });
 
-const Nav: React.FC = () => (
+const Nav: FC = () => (
   <nav>
     <ul>
       <li>

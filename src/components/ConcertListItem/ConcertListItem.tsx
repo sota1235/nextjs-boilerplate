@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { ConcertThumbnail } from '../ConcertThumbnail';
 import styled from 'styled-components';
 
