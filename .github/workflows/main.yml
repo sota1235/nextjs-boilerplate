@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-
+    timeout-minutes: 10
     runs-on: ubuntu-latest
 
     strategy:
@@ -34,9 +34,6 @@ jobs:
 
       - name: build storybook
         run: npm run build-storybook
-
-      - name: validate renovate config
-        run: npx --package renovate -c 'renovate-config-validator'
 
       - name: build source
         run: npm run build

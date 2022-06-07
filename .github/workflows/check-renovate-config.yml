@@ -1,0 +1,22 @@
+name: Main
+
+on:
+  push:
+    paths:
+      - 'renovate.json'
+
+jobs:
+  build:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run tests with v16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: validate renovate config
+        run: npx --package renovate -c 'renovate-config-validator'
