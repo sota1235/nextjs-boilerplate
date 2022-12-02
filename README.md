@@ -16,14 +16,12 @@ Scaffolding for using Next.js with...
 
 ### Requirement
 
-- Node.js v12>=
+- Node.js
+  - See [.node-version](.node-version) to confirm supported version.
 
 ### Usage
 
-- test
-  - `npm run test`
-- lint
-  - `npm run lint`
+See result of `npm run`.
 
 ### Install
 

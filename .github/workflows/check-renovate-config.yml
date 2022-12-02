@@ -1,4 +1,4 @@
-name: Main
+name: Validate renovate config
 
 on:
   push:
@@ -13,10 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run tests with v16.x
+      - name: Setting up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version-file: .node-version
+          cache: npm
 
       - name: validate renovate config
         run: npx --package renovate -c 'renovate-config-validator'
