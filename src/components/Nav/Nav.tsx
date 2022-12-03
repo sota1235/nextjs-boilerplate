@@ -14,7 +14,7 @@ const Nav: FC = () => (
     <ul>
       <li>
         <Link href="/">
-          <a>Home</a>
+          Home
         </Link>
       </li>
       {links.map(({ key, href, label }) => (
