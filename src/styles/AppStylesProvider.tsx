@@ -3,7 +3,11 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
 import { GlobalStyle } from './GlobalStyle';
 
-const AppStylesProvider: React.FC = ({ children }) => (
+type Props = {
+  children: React.ReactNode;
+}
+
+const AppStylesProvider: React.FC<Props> = ({ children }) => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
     {children}

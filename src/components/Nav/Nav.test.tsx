@@ -1,8 +1,9 @@
-import * as ReactDOM from 'react-dom';
 import { Nav } from '.';
+import { createRoot } from 'react-dom/client';
 
 it('should render without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Nav />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  const root = createRoot(div);
+  root.render(<Nav />);
+  root.unmount();
 });
