@@ -5,6 +5,8 @@ on: [push]
 jobs:
   build:
     timeout-minutes: 10
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
 
     steps:
@@ -17,10 +19,13 @@ jobs:
           cache: npm
 
       - name: npm install
-        run: npm ci
+        run: npm ci --no-audit --no-fund
 
       - name: lint
         run: npm run lint
+
+      - name: build source
+        run: npm run build
 
       - name: test
         run: |
@@ -29,15 +34,3 @@ jobs:
 
       - name: build storybook
         run: npm run build-storybook
-
-      - uses: actions/cache@88522ab9f39a2ea568f7027eddc7d8d8bc9d59c8 # v3
-        with:
-          path: |
-            ~/.npm
-            ${{ github.workspace }}/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
-
-      - name: build source
-        run: npm run build

@@ -1,4 +1,4 @@
-nextjs-boilerplate [![CircleCI](https://circleci.com/gh/sota1235/nextjs-boilerplate.svg?style=svg)](https://circleci.com/gh/sota1235/nextjs-boilerplate) [![codecov](https://codecov.io/gh/sota1235/nextjs-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/sota1235/nextjs-boilerplate)
+nextjs-boilerplate [![codecov](https://codecov.io/gh/sota1235/nextjs-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/sota1235/nextjs-boilerplate)
 ====
 
 Boilerplate for using Next.js including base setup.
